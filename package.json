@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "myInstall": "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1 npm i",
-    "myUpdate": "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1 npm update",
     "swc": "swc src -d build -D src/assets",
     "build": "rm -rf build && npm run swc",
     "serve": "npm run build && node build/index.js",
