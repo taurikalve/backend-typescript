@@ -1,7 +1,3 @@
 /build
 /node_modules
 /.swc
-/cache
-/workspace
-/secrets
-/static
