@@ -12,8 +12,8 @@
     }
   },
   "module": {
-    "type": "commonjs",
-    "noInterop": false
+    "type": "nodenext",
+    "resolveFully": true
   },
   "minify": false
 }

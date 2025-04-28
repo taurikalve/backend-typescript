@@ -2,11 +2,13 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/index.js",
+  "main": "./build/server.js",
+  "type": "module",
   "scripts": {
     "swc": "swc src -d build -D src/assets --strip-leading-paths",
     "build": "rm -rf build && npm run swc",
-    "serve": "npm run build && node build/index.js",
+    "esbuild": "node esbuild.js",
+    "serve": "npm run build && node build/server.js",
     "nodemon": "nodemon --exec \"npm run serve\"",
     "dev": "concurrently -n dev,ts \"npm:nodemon\" \"tsc --watch\""
   },
