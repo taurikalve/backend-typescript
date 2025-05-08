@@ -4,9 +4,9 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["src/*"]
     },
     "resolveJsonModule": true /* Enable importing .json files */,
     "outDir": "./build" /* Specify an output folder for all emitted files. */,

@@ -15,5 +15,6 @@
     "type": "nodenext",
     "resolveFully": true
   },
-  "minify": false
+  "minify": false,
+  "sourceMaps": true
 }
