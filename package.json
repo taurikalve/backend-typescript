@@ -1,15 +1,14 @@
 {
-  "name": "server",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/server.js",
+  "main": "./build/app.js",
   "type": "module",
   "scripts": {
     "swc": "swc src -d build -D src/assets --strip-leading-paths",
     "build": "rm -rf build && npm run swc",
-    "esbuild": "node esbuild.js",
-    "serve": "npm run build && node build/server.js",
-    "nodemon": "nodemon --exec \"npm run serve\"",
+    "start": "node build/app.js",
+    "nodemon": "nodemon --exec \"npm run build && npm run start\"",
     "dev": "concurrently -n dev,ts \"npm:nodemon\" \"tsc --watch\""
   },
   "author": "",
